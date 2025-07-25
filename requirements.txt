@@ -1,0 +1,5 @@
+﻿fastapi
+uvicorn
+qrcode
+Pillow
+jinja2

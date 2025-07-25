@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>QR Code Generator</title>
+</head>
+<body>
+  <h1>QR Code Generator</h1>
+  <form action="/api/generate" method="post" target="qr-frame">
+    <input type="text" name="url" placeholder="Enter a URL" required><br>
+    <label>Foreground Color:</label>
+    <input type="color" name="fg_color" value="#000000">
+    <label>Background Color:</label>
+    <input type="color" name="bg_color" value="#ffffff"><br>
+    <button type="submit">Generate</button>
+  </form>
+  <h2>Preview:</h2>
+  <iframe name="qr-frame" width="250" height="250" style="border:none;"></iframe>
+</body>
+</html>
